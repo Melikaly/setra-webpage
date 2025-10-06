@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 interface Props {
   children: ReactNode;
   variant: "white" | "gradientBluePurple" | "gray" | "gardientGray";
-  section: "hero" | "simple";
+  section: "hero" | "stat" | "simple";
   id: string;
 }
 
@@ -29,6 +29,8 @@ const Section = ({
   const sectionType =
     section === "hero"
       ? { position: "relative", overflow: "hidden", pt: "24", pb: "16" }
+      : section === "stat"
+      ? { py: "16" }
       : { py: "20" };
   return (
     <Box as="section" id={id} {...variantStyle} {...sectionType}>

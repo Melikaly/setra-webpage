@@ -1,9 +1,14 @@
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import CircleDots from "./CircleDots";
 import HeroInfoItem from "./HeroInfoItem";
-import FeatureItem from "./FeatureItem";
+import FeatureItem from "./FeatureItems";
 
 const HeroInfo = () => {
+  const heroFeatures = [
+    { featureTitle: "24/7", featureName: "Monitoring" },
+    { featureTitle: "99.9%", featureName: "Accuacy" },
+    { featureTitle: "<1s", featureName: "Response" },
+  ];
   return (
     <Box
       bgGradient="to-br"
@@ -62,28 +67,11 @@ const HeroInfo = () => {
       </Box>
       <SimpleGrid columns={3} gap={4}>
         <FeatureItem
-          featureTitle={"24/7"}
-          featureName={"Monitoring"}
+          features={heroFeatures}
           fontName="xs"
           fontTitle="2xl"
           padding="3"
-          itemType="hero"
-        />
-        <FeatureItem
-          featureTitle={"99.9%"}
-          featureName={"Accuacy"}
-          fontName="xs"
-          fontTitle="2xl"
-          padding="3"
-          itemType="hero"
-        />
-        <FeatureItem
-          featureTitle={"<1s"}
-          featureName={"Response"}
-          fontName="xs"
-          fontTitle="2xl"
-          padding="3"
-          itemType="hero"
+          variant="hero"
         />
       </SimpleGrid>
     </Box>

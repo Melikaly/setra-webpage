@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
+import Stats from "./components/Stats";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <NavBar />
       <Box as={"main"} backgroundColor={"red"} position={"relative"}>
         <Hero  />
-        <Box backgroundColor={"purple"}>Stats Section</Box>
+        <Stats />
         <Box backgroundColor={"red"}>AI Feature Section</Box>
         <Box backgroundColor={"blueviolet"}>How it works Section</Box>
         <Box backgroundColor={"lavender"}>Benifit Section</Box>
