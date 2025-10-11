@@ -14,6 +14,7 @@ const MainHeading = ({heading,mb=4}:Props) => {
       fontWeight="bold"
       color="gray.900"
       mb={mb}
+      lineHeight="normal"
     >
       {heading}
     </Heading>

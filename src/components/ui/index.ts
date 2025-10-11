@@ -4,6 +4,7 @@ export {default as MainHeading} from "./MainHeading";
 export {default as MainHeadingGroup} from "./MainHeadingGroup";
 export {default as Section} from "./Section";
 export {default as FeatureItem} from "./FeatureItem";
+export {default as TwoColGrid} from "./TwoColGrid"
 
 
 

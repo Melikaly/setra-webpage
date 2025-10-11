@@ -1,19 +1,20 @@
-import { GridItem, SimpleGrid } from "@chakra-ui/react";
+import { GridItem } from "@chakra-ui/react";
 import HeroContent from "./HeroContent";
 import HeroInfo from "./HeroInfo";
-import { Section } from "../ui";
+import { Section, TwoColGrid } from "../ui";
+
 
 const Hero = () => {
   return (
     <Section variant={"gradientBluePurple"} section={"hero"} id={"heroSection"}>
-      <SimpleGrid columns={{ base: 1, lg: 2 }} gap={12} alignItems="center">
+      <TwoColGrid>
         <GridItem key="hero-content">
           <HeroContent />
         </GridItem>
         <GridItem key="hero-Info" position="relative">
           <HeroInfo />
         </GridItem>
-      </SimpleGrid>
+      </TwoColGrid>
     </Section>
   );
 };

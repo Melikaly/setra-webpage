@@ -3,6 +3,7 @@ import { Hero } from "../hero";
 import { Stats } from "../stats";
 import { AiFeature } from "../ai-feature";
 import { HowItWorks } from "../how-it-works";
+import Benifit from "../benifit/Benifit";
 
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
       <Stats />
       <AiFeature />
       <HowItWorks />
-      <Box backgroundColor={"lavender"}>Benifit Section</Box>
+      <Benifit />
       <Box backgroundColor={"lightcoral"}>CTA Section</Box>
       <Box backgroundColor={"gray"}>footer</Box>
     </Box>
