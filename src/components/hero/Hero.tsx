@@ -6,7 +6,7 @@ import { Section, TwoColGrid } from "../ui";
 
 const Hero = () => {
   return (
-    <Section variant={"gradientBluePurple"} section={"hero"} id={"heroSection"}>
+    <Section variant={"gradientBluePurple50"} section={"hero"} id={"heroSection"}>
       <TwoColGrid>
         <GridItem key="hero-content">
           <HeroContent />

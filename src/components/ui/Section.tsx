@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  variant: "white" | "gradientBluePurple" | "gray" | "gradientGray";
+  variant: "white" | "gradientBluePurple50" | "gradientBluePurple600" | "gray" | "gradientGray";
   section: "hero" | "stat" | "simple";
   id: string;
 }
@@ -15,11 +15,17 @@ const Section = ({
   id,
 }: Props) => {
   const variantStyle =
-    variant === "gradientBluePurple"
+    variant === "gradientBluePurple50"
       ? {
           bgGradient: "to-br",
           gradientFrom: "blue.50",
           gradientTo: "purple.50",
+        }
+      : variant === "gradientBluePurple600"
+      ? {
+          bgGradient: "to-r",
+          gradientFrom: "blue.600",
+          gradientTo: "purple.600",
         }
       : variant === "gray"
       ? { bg: "gray.900" }

@@ -4,18 +4,19 @@ import MainHeading from "./MainHeading";
 interface Props {
   heading: string;
   text: string;
+  headingColor?: string;
+  textColor?: string;
 }
 
-const MainHeadingGroup = ({ heading, text }: Props) => {
+const MainHeadingGroup = ({ heading, text, textColor="gray.600", headingColor }: Props) => {
   return (
     <Box textAlign="center">
-      <MainHeading heading={heading} />
+      <MainHeading heading={heading} color={headingColor} />
       <Text
         fontSize="xl"
-        color="gray.700"
         maxWidth="4xl"
         mx="auto"
-        
+        color={textColor}
       >
         {text}
       </Text>
