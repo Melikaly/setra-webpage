@@ -1,8 +1,7 @@
-import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, SimpleGrid, Text } from "@chakra-ui/react";
 import HeroInfoItem from "./HeroInfoItem";
-import CircleDots from "./CircleDots";
-import { FeatureItem } from "../ui";
-import { heroFeatures, heroInfoItem } from "./heroData";
+import { CircleDot, FeatureItem } from "../ui";
+import { heroFeatures, heroInfoItem, InoDotscolors } from "./heroData";
 
 const HeroInfo = () => {
   return (
@@ -28,7 +27,10 @@ const HeroInfo = () => {
         overflow="hidden"
       >
         <Flex justifyContent={"space-between"} alignItems={"center"} mb={4}>
-          <CircleDots colors={["red.600", "yellow.600", "green.600"]} />
+          <HStack>
+            {InoDotscolors.map((color) => <CircleDot color={color}  />)}
+          </HStack>
+          
           <Text color="green.400" fontSize="sm" fontFamily="mono">
             LIVE
           </Text>

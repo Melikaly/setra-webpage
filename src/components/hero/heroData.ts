@@ -12,3 +12,5 @@ export const heroInfoItem = [
   { color: "blue", textTitle: "Motion Analysis: Active", textInfo: "Zone 3" },
   { color: "purple", textTitle: "Threat Level: Low", textInfo: "Normal" },
 ];
+
+export const InoDotscolors=["red.600", "yellow.600", "green.600"]

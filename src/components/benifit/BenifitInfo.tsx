@@ -26,7 +26,7 @@ const BenifitInfo = () => {
             AI Detection Dashboard
           </Heading>
           <InfoBadge fontSize={"sm"} color={"green"}>
-            <CirclePulse size={2} bg={"green"} varient="simple" />
+            <CirclePulse size={2} bg={"green.500"} />
             Live
           </InfoBadge>
         </Flex>

@@ -1,14 +1,12 @@
-import { Box, Button, Flex, Group, HStack, Text } from "@chakra-ui/react";
-
-import { Eye } from "lucide-react";
+import { Button, Flex, Group } from "@chakra-ui/react";
 import NavLink from "./NavLink";
 import { useColorModeValue } from "../ui/color-mode";
-import { CirclePulse } from "../ui";
+import TextLogo from "./TextLogo";
 
 function NavBar() {
   return (
     <Flex
-      as={"header"}
+      as={"nav"}
       w={"100%"}
       position={"fixed"}
       top={0}
@@ -22,22 +20,8 @@ function NavBar() {
       backgroundColor={"white"}
       zIndex="50"
     >
-      <HStack alignItems="center" spaceX={3}>
-        <Box position="relative">
-          <Eye color="#2563eb" />
-          <CirclePulse size={3} bg={"purple"} varient={"nav"} />
-        </Box>
-        <Text
-          fontWeight={"bold"}
-          fontSize="2xl"
-          bgGradient="to-r"
-          gradientFrom="blue.600"
-          gradientTo="purple.600"
-          bgClip="text"
-        >
-          Setra
-        </Text>
-      </HStack>
+      <TextLogo fontSize={"2xl"} variant={"nav"} colorFrom={"blue.600"} colorTo={"purple.600"}/>
+        
       <Group
         display={{ base: "none", md: "flex" }}
         spaceX={8}

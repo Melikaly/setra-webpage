@@ -1,17 +1,19 @@
 import { Box, Container } from "@chakra-ui/react";
-import type { ReactNode } from "react";
+import type { ElementType, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
   variant: "white" | "gradientBluePurple50" | "gradientBluePurple600" | "gray" | "gradientGray";
   section: "hero" | "stat" | "simple";
   id: string;
+  as?: ElementType;
 }
 
 const Section = ({
   children,
   variant = "white",
   section = "simple",
+  as="div",
   id,
 }: Props) => {
   const variantStyle =
@@ -45,6 +47,7 @@ const Section = ({
         mx="auto"
         px={{ base: "4", sm: "6", lg: "8" }}
         position={"relative"}
+        as={as}
       >
         {children}
       </Container>

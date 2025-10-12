@@ -11,7 +11,7 @@ const NavLink = ({ children }: Props) => {
     <Link
       href="#"
       _hover={{ color: "blue.600" }}
-      style={{ textDecoration: "none" }}
+      textDecoration="none" 
       transition={"colors"}
     >
         {children}
