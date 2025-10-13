@@ -7,7 +7,7 @@ import { aiFeatureHeading, aiFeatureText } from "./aiFeatureData";
 const AiFeature = () => {
   
   return (
-    <Section variant="white" section={"simple"} id="AiFeature">
+    <Section bg="white" py={20} id="AiFeature">
       <Box textAlign="center" mb={16}>
         <LabelSection
           icon={<Cpu height={16} width={16} />}

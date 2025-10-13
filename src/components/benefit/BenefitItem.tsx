@@ -1,16 +1,16 @@
 import { Box, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import { CheckCircle } from "lucide-react";
 
-interface BenfitPropps {
+interface BenefitPropps {
   heading: string;
   text: string;
 }
 
 interface Prop {
-  item: BenfitPropps;
+  item: BenefitPropps;
 }
 
-const BenifitItem = ({ item }: Prop) => {
+const BenefitItem = ({ item }: Prop) => {
   return (
     <Flex alignItems="start" spaceX={4}>
       <Box
@@ -35,4 +35,5 @@ const BenifitItem = ({ item }: Prop) => {
   );
 };
 
-export default BenifitItem;
+export default BenefitItem;
+

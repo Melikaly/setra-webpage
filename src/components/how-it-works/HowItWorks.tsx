@@ -4,7 +4,13 @@ import HowItWorksGrid from "./HowItWorksGrid";
 
 const HowItWorks = () => {
   return (
-    <Section variant="gradientGray" section={"hero"} id={"howItWorks"}>
+    <Section
+      bgGradient="to-br"
+      gradientFrom="gray.50"
+      gradientTo="white"
+      py={20}
+      id={"howItWorks"}
+    >
       <MainHeadingGroup heading={howItWorksHeading} text={howItWorksText} />
       <HowItWorksGrid />
     </Section>

@@ -5,7 +5,7 @@ import { statFeatures } from "./statsData";
 
 const Stats = () => {
   return (
-    <Section variant="gray" section="stat" id={"Stat"}>
+    <Section bg="gray.900" py={16} id={"Stat"}>
       <SimpleGrid columns={{ base: 1, md: 4 }} gap={8} textAlign="center">
         {statFeatures.map((feature) => (
           <FeatureItem

@@ -3,7 +3,7 @@ import { Hero } from "../hero";
 import { Stats } from "../stats";
 import { AiFeature } from "../ai-feature";
 import { HowItWorks } from "../how-it-works";
-import { Benifit } from "../benifit";
+import { Benefit } from "../benefit";
 import { CTA } from "../cta";
 import { Footer } from "../layout";
 
@@ -18,7 +18,7 @@ const Home = () => {
       <Stats />
       <AiFeature />
       <HowItWorks />
-      <Benifit />
+      <Benefit />
       <CTA />
       <Footer />
     </Box>

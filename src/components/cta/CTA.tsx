@@ -5,7 +5,13 @@ import { Play } from "lucide-react";
 
 const CTA = () => {
   return (
-    <Section variant="gradientBluePurple600" section="simple" id={"cta"}>
+    <Section
+      bgGradient="to-r"
+      gradientFrom="blue.600"
+      gradientTo="purple.600"
+      py={20}
+      id={"cta"}
+    >
       <MainHeadingGroup
         heading={ctaHeading}
         text={ctaText}

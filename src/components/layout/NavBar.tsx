@@ -1,54 +1,36 @@
-import { Button, Flex, Group } from "@chakra-ui/react";
-import NavLink from "./NavLink";
+
 import { useColorModeValue } from "../ui/color-mode";
 import TextLogo from "./TextLogo";
+import { Section } from "../ui";
+import { Flex } from "@chakra-ui/react";
+import NavBarLinks from "./NavBarLinks";
 
 function NavBar() {
   return (
-    <Flex
-      as={"nav"}
-      w={"100%"}
-      position={"fixed"}
+    <Section
+      as="nav"
+      id="nav"
+      w="100%"
+      position="fixed"
       top={0}
-      justifyContent={"space-between"}
-      alignContent={"center"}
       py={3}
-      px={16}
-      borderBottom={1}
-      borderStyle={"solid"}
+      px={{ base: 4, sm: 6, lg: 8 }}
+      borderBottom="1px solid"
       borderColor={useColorModeValue("gray.200", "gray.900")}
-      backgroundColor={"white"}
+      bg="whiteAlpha.900"
+      backdropBlur="8px"
       zIndex="50"
     >
-      <TextLogo fontSize={"2xl"} variant={"nav"} colorFrom={"blue.600"} colorTo={"purple.600"}/>
-        
-      <Group
-        display={{ base: "none", md: "flex" }}
-        spaceX={8}
-        alignItems="center"
-      >
-        <NavLink>AI Features</NavLink>
-        <NavLink>How it Works</NavLink>
-        <NavLink>Benefits</NavLink>
-        <Button
-          bgGradient="to-r"
-          gradientFrom="blue.600"
-          gradientTo="purple.600"
-          size="sm"
-          rounded="md"
-          border="none"
-          paddingX={5}
-          _hover={{
-            transform: "scale(1.03)",
-            bgGradient: "to-r",
-            gradientFrom: "blue.700",
-            gradientTo: "purple.700",
-          }}
-        >
-          Request Demo
-        </Button>
-      </Group>
-    </Flex>
+      <Flex justify="space-between" align="center">
+        <TextLogo
+          fontSize="2xl"
+          variant="nav"
+          colorFrom="blue.600"
+          colorTo="purple.600"
+        />
+        <NavBarLinks />
+      </Flex>
+    </Section>
   );
 }
 

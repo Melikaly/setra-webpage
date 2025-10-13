@@ -4,15 +4,16 @@ import type { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+  href: string;
 }
 
-const NavLink = ({ children }: Props) => {
+const NavLink = ({ children, href }: Props) => {
   return (
     <Link
-      href="#"
+      href={href}
       _hover={{ color: "blue.600" }}
       textDecoration="none" 
-      transition={"colors"}
+      transition="colors"
     >
         {children}
     </Link>

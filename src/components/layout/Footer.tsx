@@ -13,7 +13,7 @@ import FooterContactItem from "./FooterContactItem";
 
 const Footer = () => {
   return (
-    <Section variant="gray" section="stat" id="footer" as="footer">
+    <Section bg="gray.900" py={16} id="footer" as="footer">
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 4 }}
         color="white"

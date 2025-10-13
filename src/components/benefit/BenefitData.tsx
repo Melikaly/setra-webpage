@@ -1,6 +1,6 @@
-export const benifitHeading = "Transform Your Security Operations";
+export const benefitHeading = "Transform Your Security Operations";
 
-export const benifitItems = [
+export const benefitItems = [
   {
     heading: "Proactive Threat Detection",
     text: "AI identifies potential security threats before they escalate, enabling preventive action rather than reactive response.",
@@ -23,12 +23,12 @@ export const benifitItems = [
   },
 ];
 
-export const benifitFeatures = [
+export const benefitFeatures = [
   { featureTitle: "847", featureText: "Events Today", colorTitle: "blue.600" },
   { featureTitle: "99.9%", featureText: "Accuracy", colorTitle: "purple.600" },
 ];
 
-export const benifitInfoItems = [
+export const benefitInfoItems = [
   {
     type: "Person Detected",
     confidence: "99.7%",

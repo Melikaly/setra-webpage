@@ -1,9 +1,10 @@
 import { Box, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import { CirclePulse, FeatureItem, InfoBadge } from "../ui";
-import BenifitInfoItem from "./BenifitInfoItem";
-import { benifitFeatures, benifitInfoItems } from "./BenifitData";
+import { benefitFeatures, benefitInfoItems } from "./BenefitData";
+import BenefitInfoItem from "./BenefitInfoItem";
 
-const BenifitInfo = () => {
+
+const BenefitInfo = () => {
   return (
     <Box
       bgGradient="to-br"
@@ -31,8 +32,8 @@ const BenifitInfo = () => {
           </InfoBadge>
         </Flex>
         <Box divideY="1px">
-          {benifitInfoItems.map((item) => (
-            <BenifitInfoItem
+          {benefitInfoItems.map((item) => (
+            <BenefitInfoItem
               type={item.type}
               confidence={item.confidence}
               status={item.status}
@@ -41,8 +42,8 @@ const BenifitInfo = () => {
           ))}
         </Box>
       </Box>
-      <SimpleGrid columns={benifitFeatures.length} gap={4}>
-        {benifitFeatures.map((feature) => (
+      <SimpleGrid columns={benefitFeatures.length} gap={4}>
+        {benefitFeatures.map((feature) => (
           <FeatureItem
             feature={feature}
             fontName="xs"
@@ -59,4 +60,4 @@ const BenifitInfo = () => {
   );
 };
 
-export default BenifitInfo;
+export default BenefitInfo;

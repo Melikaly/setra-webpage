@@ -1,16 +1,21 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { InfoBadge } from "../ui";
 
-interface Props{ 
-    type: string;
-    confidence: string;
-    status: string; 
-    color: string; 
+interface Props {
+  type: string;
+  confidence: string;
+  status: string;
+  color: string;
 }
 
-const BenifitInfoItem = ({type,confidence,status,color}:Props) => {
+const BenefitInfoItem = ({ type, confidence, status, color }: Props) => {
   return (
-    <Flex justifyContent={"space-between"} alignItems={"center"} py={2} key={type}>
+    <Flex
+      justifyContent={"space-between"}
+      alignItems={"center"}
+      py={2}
+      key={type}
+    >
       <Box>
         <Text fontWeight="medium" color="gray.900">
           {type}
@@ -26,4 +31,4 @@ const BenifitInfoItem = ({type,confidence,status,color}:Props) => {
   );
 };
 
-export default BenifitInfoItem;
+export default BenefitInfoItem;
