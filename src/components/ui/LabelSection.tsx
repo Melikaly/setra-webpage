@@ -1,19 +1,13 @@
-import { HStack, Text } from "@chakra-ui/react";
-import type { ReactNode } from "react";
+import type TitleGroup from "@/entities/TitleGroup";
+import { Box, Icon, Text } from "@chakra-ui/react";
 
-interface Props {
-  icon: ReactNode;
-  text: string;
-  color: string;
-}
-
-const LabelSection = ({ icon, text, color }: Props) => {
+const LabelSection = ({ title, icon, color }: TitleGroup) => {
   return (
-    <HStack
+    <Box
       display="inline-flex"
       alignItems="center"
-      bg={color +".100"}
-      color={ color +".700"}
+      bg={`${color}.100`}
+      color={`${color}.700`}
       rounded="full"
       textStyle="sm"
       fontWeight="medium"
@@ -21,9 +15,9 @@ const LabelSection = ({ icon, text, color }: Props) => {
       py={2}
       mb={6}
     >
-      {icon}
-      <Text>{text}</Text>
-    </HStack>
+      <Icon as={icon} boxSize={6} />
+      <Text>{title}</Text>
+    </Box>
   );
 };
 

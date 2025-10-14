@@ -1,16 +1,10 @@
+import type TitleGroup from "@/entities/TitleGroup";
 import { Box, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import { CheckCircle } from "lucide-react";
 
-interface BenefitPropps {
-  heading: string;
-  text: string;
-}
 
-interface Prop {
-  item: BenefitPropps;
-}
 
-const BenefitItem = ({ item }: Prop) => {
+const BenefitItem = ({ title,text }: TitleGroup) => {
   return (
     <Flex alignItems="start" spaceX={4}>
       <Box
@@ -27,13 +21,12 @@ const BenefitItem = ({ item }: Prop) => {
       </Box>
       <Box>
         <Heading as="h3" fontWeight="semibold" color="gray.900" mb={2}>
-          {item.heading}
+          {title}
         </Heading>
-        <Text color="gray.600">{item.text}</Text>
+        <Text color="gray.600">{text}</Text>
       </Box>
     </Flex>
   );
 };
 
 export default BenefitItem;
-

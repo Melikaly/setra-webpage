@@ -13,7 +13,7 @@ const CTA = () => {
       id={"cta"}
     >
       <MainHeadingGroup
-        heading={ctaHeading}
+        title={ctaHeading}
         text={ctaText}
         headingColor="white"
         textColor="whiteAlpha.900"

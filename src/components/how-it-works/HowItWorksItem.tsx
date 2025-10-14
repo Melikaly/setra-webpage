@@ -1,17 +1,7 @@
+import type TitleGroup from "@/entities/TitleGroup";
 import { Box, Heading, Icon, Text } from "@chakra-ui/react";
-import type { ElementType } from "react";
 
-interface WorksItem {
-  icon: ElementType;
-  title: string;
-  text: string;
-}
-
-interface Prop {
-  item: WorksItem;
-}
-
-const HowItWorksItem = ({ item }: Prop) => {
+const HowItWorksItem = ({ title, text, icon }: TitleGroup) => {
   return (
     <Box textAlign="center">
       <Box
@@ -28,14 +18,14 @@ const HowItWorksItem = ({ item }: Prop) => {
         mb={8}
         mx="auto"
       >
-        <Icon as={item.icon} boxSize={8} />
+        <Icon as={icon} boxSize={8} />
       </Box>
 
       <Heading as="h3" fontSize="xl" color="gray.900" fontWeight="bold" mb={4}>
-        {item.title}
+        {title}
       </Heading>
       <Text fontSize="md" color="gray.700" lineHeight="moderate">
-        {item.text}
+        {text}
       </Text>
     </Box>
   );

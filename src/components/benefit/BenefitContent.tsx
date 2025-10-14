@@ -6,10 +6,10 @@ import BenefitItem from "./BenefitItem";
 const BenefitContent = () => {
   return (
     <Box>
-      <MainHeading heading={benefitHeading} mb={8} />
+      <MainHeading title={benefitHeading} mb={8} />
       <VStack gap={6}>
         {benefitItems.map((item) => (
-          <BenefitItem item={item} />
+          <BenefitItem title={item.title} text={item.text}  />
         ))}
       </VStack>
     </Box>

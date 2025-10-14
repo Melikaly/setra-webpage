@@ -1,13 +1,13 @@
 import { Heading } from "@chakra-ui/react";
 
 interface Props{
-    heading: string;
+    title: string;
     mb?: string | number;
     color?: string;
 
 }
 
-const MainHeading = ({heading,mb=4,color="gray.900"}:Props) => {
+const MainHeading = ({title,mb=4,color="gray.900"}:Props) => {
   return (
     <Heading
       as={"h2"}
@@ -17,7 +17,7 @@ const MainHeading = ({heading,mb=4,color="gray.900"}:Props) => {
       mb={mb}
       lineHeight="normal"
     >
-      {heading}
+      {title}
     </Heading>
   );
 };

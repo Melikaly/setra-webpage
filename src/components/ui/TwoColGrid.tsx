@@ -1,16 +1,16 @@
-import { SimpleGrid } from "@chakra-ui/react"
-import type { ReactNode } from "react"
+import { SimpleGrid } from "@chakra-ui/react";
+import type { ReactNode } from "react";
 
-interface Prop{
-    children: ReactNode;
+interface Prop {
+  children: ReactNode;
 }
 
-const TwoColGrid = ({children}: Prop) => {
+const TwoColGrid = ({ children }: Prop) => {
   return (
     <SimpleGrid columns={{ base: 1, lg: 2 }} gap={12} alignItems="center">
-        {children}
+      {children}
     </SimpleGrid>
-  )
-}
+  );
+};
 
-export default TwoColGrid
+export default TwoColGrid;

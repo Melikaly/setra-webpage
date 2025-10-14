@@ -28,18 +28,20 @@ const HeroInfo = () => {
       >
         <Flex justifyContent={"space-between"} alignItems={"center"} mb={4}>
           <HStack>
-            {InoDotscolors.map((color) => <CircleDot color={color}  />)}
+            {InoDotscolors.map((color) => (
+              <CircleDot color={color} />
+            ))}
           </HStack>
-          
+
           <Text color="green.400" fontSize="sm" fontFamily="mono">
             LIVE
           </Text>
         </Flex>
         {heroInfoItem.map((info) => (
           <HeroInfoItem
+            title={info.title}
+            text={info.text}
             color={info.color}
-            textTitle={info.textTitle}
-            textInfo={info.textInfo}
           />
         ))}
         <Box

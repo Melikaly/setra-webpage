@@ -2,16 +2,16 @@ import { Box,Text } from "@chakra-ui/react";
 import MainHeading from "./MainHeading";
 
 interface Props {
-  heading: string;
+  title: string;
   text: string;
   headingColor?: string;
   textColor?: string;
 }
 
-const MainHeadingGroup = ({ heading, text, textColor="gray.600", headingColor }: Props) => {
+const MainHeadingGroup = ({ title, text, textColor="gray.600", headingColor }: Props) => {
   return (
     <Box textAlign="center">
-      <MainHeading heading={heading} color={headingColor} />
+      <MainHeading title={title} color={headingColor} />
       <Text
         fontSize="xl"
         maxWidth="4xl"

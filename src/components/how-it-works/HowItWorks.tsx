@@ -11,7 +11,7 @@ const HowItWorks = () => {
       py={20}
       id={"howItWorks"}
     >
-      <MainHeadingGroup heading={howItWorksHeading} text={howItWorksText} />
+      <MainHeadingGroup title={howItWorksHeading} text={howItWorksText} />
       <HowItWorksGrid />
     </Section>
   );

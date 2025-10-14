@@ -1,11 +1,15 @@
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { Brain, Play } from "lucide-react";
-import {CheckedItems, LabelSection}  from "../ui";
+import { CheckedItems, LabelSection } from "../ui";
 
 const HeroContent = () => {
   return (
     <>
-    <LabelSection icon={<Brain height={16} width={16} />} text={"AI-Powered Intelligence"} color="blue" />
+      <LabelSection
+        icon={Brain}
+        title={"AI-Powered Intelligence"}
+        color="blue"
+      />
       <Heading
         textStyle={{ base: "4xl", md: "6xl" }}
         mb={6}
