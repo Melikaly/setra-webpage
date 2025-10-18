@@ -6,9 +6,7 @@ import { Section, TwoColGrid } from "../ui";
 const Hero = () => {
   return (
     <Section
-      bgGradient="to-br"
-      gradientFrom="blue.50"
-      gradientTo="purple.50"
+      bgImage="gradientBluePurple_toBr_50"
       id={"heroSection"}
       overflow="hidden"
       pt="24" 

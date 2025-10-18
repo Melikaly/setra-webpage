@@ -5,9 +5,7 @@ import HowItWorksGrid from "./HowItWorksGrid";
 const HowItWorks = () => {
   return (
     <Section
-      bgGradient="to-br"
-      gradientFrom="gray.50"
-      gradientTo="white"
+      bgImage="gradientGray_toBr_White"
       py={20}
       id={"howItWorks"}
     >

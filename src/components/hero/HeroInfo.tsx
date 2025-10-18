@@ -6,9 +6,7 @@ import { heroFeatures, heroInfoItem, InoDotscolors } from "./heroData";
 const HeroInfo = () => {
   return (
     <Box
-      bgGradient="to-br"
-      gradientFrom="gray.800"
-      gradientTo="blue.800"
+      bgImage="gradientGray_toBr_blue"
       padding={8}
       rounded="xl"
       shadow="2xl"
@@ -50,9 +48,7 @@ const HeroInfo = () => {
           right={0}
           width="full"
           height={1}
-          bgGradient="to-r"
-          gradientFrom="blue.600"
-          gradientTo="purple.600"
+          bgImage="gradientBluePurple_toR_600"
           animation="pulse"
         ></Box>
       </Box>

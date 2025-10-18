@@ -7,9 +7,7 @@ import BenefitInfoItem from "./BenefitInfoItem";
 const BenefitInfo = () => {
   return (
     <Box
-      bgGradient="to-br"
-      gradientFrom="blue.50"
-      gradientTo="purple.50"
+      bgImage="gradientBluePurple_toBr_50"
       padding={8}
       rounded="xl"
     >

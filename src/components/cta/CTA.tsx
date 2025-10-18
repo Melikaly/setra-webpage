@@ -6,9 +6,7 @@ import { Play } from "lucide-react";
 const CTA = () => {
   return (
     <Section
-      bgGradient="to-r"
-      gradientFrom="blue.600"
-      gradientTo="purple.600"
+      bgImage="gradientBluePurple_toR_600"
       py={20}
       id={"cta"}
     >

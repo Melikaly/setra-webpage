@@ -20,9 +20,7 @@ const HeroContent = () => {
         <Text
           as={"span"}
           color="transparent"
-          bgGradient="to-r"
-          gradientFrom="blue.600"
-          gradientTo="purple.600"
+          bgImage="gradientBluePurple_toR_600"
           bgClip="text"
         >
           AI Analytics
@@ -39,9 +37,7 @@ const HeroContent = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
-          bgGradient="to-r"
-          gradientFrom="blue.600"
-          gradientTo="purple.600"
+          bgImg="gradientBluePurple_toR_600"
           color="white"
           rounded="lg"
           border="none"
@@ -50,9 +46,7 @@ const HeroContent = () => {
           size="xl"
           _hover={{
             transform: "scale(1.03)",
-            bgGradient: "to-r",
-            gradientFrom: "blue.700",
-            gradientTo: "purple.700",
+            bgImage: "gradientBluePurple_toR_700"
           }}
         >
           <Play />

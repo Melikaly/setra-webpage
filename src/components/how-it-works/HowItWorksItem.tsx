@@ -12,9 +12,7 @@ const HowItWorksItem = ({ title, text, icon }: TitleGroup) => {
         justifyContent="center"
         rounded="full"
         color="white"
-        bgGradient="to-r"
-        gradientFrom="blue.600"
-        gradientTo="purple.600"
+        bgImage="gradientBluePurple_toR_600"
         mb={8}
         mx="auto"
       >

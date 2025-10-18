@@ -8,9 +8,7 @@ const NavBarLinks = () => {
       <NavLink href="#benefit">Benefits</NavLink>
       <NavLink href="#howItWorks">How it Works</NavLink>
       <Button
-        bgGradient="to-r"
-        gradientFrom="blue.600"
-        gradientTo="purple.600"
+        bgImage="gradientBluePurple_toR_600"
         size="sm"
         rounded="md"
         border="none"
@@ -19,9 +17,7 @@ const NavBarLinks = () => {
         fontWeight="semibold"
         _hover={{
           transform: "scale(1.03)",
-          bgGradient: "to-r",
-          gradientFrom: "blue.700",
-          gradientTo: "purple.700",
+          bgImage: "gradientBluePurple_toR_700"
         }}
       >
         Request Demo
