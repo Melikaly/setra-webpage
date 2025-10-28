@@ -1,14 +1,16 @@
 
-import AiFeature from "@/components/ai-feature/AiFeature";
-import Benefit from "@/components/benefit/Benefit";
-import CTA from "@/components/cta/CTA";
+
 import Hero from "@/components/hero/Hero";
-import HowItWorks from "@/components/how-it-works/HowItWorks";
-import Stats from "@/components/stats/Stats";
-import { Box } from "@chakra-ui/react";
 
 
+import { Box, Center, Spinner } from "@chakra-ui/react";
+import { lazy, Suspense } from "react";
 
+ const AiFeature = lazy(()=>import("@/components/ai-feature/AiFeature"));
+ const Benefit = lazy(()=>import("@/components/benefit/Benefit"));
+ const CTA = lazy(()=>import("@/components/cta/CTA"));
+ const HowItWorks = lazy(()=>import("@/components/how-it-works/HowItWorks"));
+ const Stats = lazy(()=>import("@/components/stats/Stats"));
 
 
 
@@ -16,11 +18,19 @@ const Home = () => {
   return (
     <Box as={"main"} position={"relative"}>
       <Hero />
+      <Suspense
+        fallback={
+          <Center h="100vh">
+            <Spinner size="xl" color="blue.500" />
+          </Center>
+        }
+      >
       <Stats />
       <AiFeature />
       <HowItWorks />
       <Benefit />
       <CTA />
+      </Suspense>
     </Box>
   );
 };
