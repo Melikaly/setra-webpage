@@ -1,6 +1,6 @@
-import { Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
-import { Brain, Play } from "lucide-react";
-import { CheckedItems, LabelSection } from "../ui";
+import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { Brain } from "lucide-react";
+import { CheckedItems, LabelSection, RequestDemoLink } from "../ui";
 import { checkedTexts } from "./heroData";
 
 const HeroContent = () => {
@@ -34,28 +34,15 @@ const HeroContent = () => {
         respond swiftly to potential threats.
       </Text>
       <Flex mb={8} gap={4} flexDirection={{ base: "column", md: "row" }}>
-        <Button
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          bgImg="gradientBluePurple_toR_600"
+        <RequestDemoLink
           color="white"
           rounded="lg"
-          border="none"
           px={6}
-          py={7}
-          size="xl"
-          _hover={{
-            transform: "scale(1.03)",
-            bgImage: "gradientBluePurple_toR_700",
-          }}
-        >
-          <Play />
-          Request Demo
-        </Button>
-        <Button size="lg" variant="outline" px={6} py={7} rounded="lg">
-          Get Free Trail
-        </Button>
+          py={4}
+          bg="linear-gradient(to right, #2563eb, #9333ea)"
+          bgHover="linear-gradient(to right, #173da6, #641ba3)"
+          isIcon={true}
+        />
       </Flex>
       <Stack direction="row" spaceX={6} fontSize="sm" color="gray.600">
         {checkedTexts.map((item) => (

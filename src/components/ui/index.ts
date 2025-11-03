@@ -8,3 +8,4 @@ export {default as TwoColGrid} from "./TwoColGrid";
 export {default as InfoBadge} from "./InfoBadge";
 export {default as CirclePulse} from "./CirclePulse"
 export {default as CircleDot} from "./CircleDot"
+export {default as RequestDemoLink} from "./RequestDemoLink"

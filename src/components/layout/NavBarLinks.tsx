@@ -1,5 +1,6 @@
-import { Button, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import NavLink from "./NavLink";
+import RequestDemoLink from "../ui/RequestDemoLink";
 
 const NavBarLinks = () => {
   return (
@@ -7,21 +8,15 @@ const NavBarLinks = () => {
       <NavLink href="#AiFeature">AI Features</NavLink>
       <NavLink href="#benefit">Benefits</NavLink>
       <NavLink href="#howItWorks">How it Works</NavLink>
-      <Button
-        bgImage="gradientBluePurple_toR_600"
-        size="sm"
-        rounded="md"
-        border="none"
-        paddingX={5}
+      <RequestDemoLink
         color="white"
-        fontWeight="semibold"
-        _hover={{
-          transform: "scale(1.03)",
-          bgImage: "gradientBluePurple_toR_700"
-        }}
-      >
-        Request Demo
-      </Button>
+        rounded="md"
+        px={5}
+        py={2}
+        bg="linear-gradient(to right, #2563eb, #9333ea)"
+        bgHover="linear-gradient(to right, #173da6, #641ba3)"
+        fontSize="sm"
+      />
     </Flex>
   );
 };

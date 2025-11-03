@@ -1,15 +1,10 @@
-import { Button, Stack, Text, VStack } from "@chakra-ui/react";
-import { MainHeadingGroup, Section } from "../ui";
+import { Stack, Text, VStack } from "@chakra-ui/react";
+import { MainHeadingGroup, RequestDemoLink, Section } from "../ui";
 import { ctaHeading, ctaText } from "./CtaData";
-import { Play } from "lucide-react";
 
 const CTA = () => {
   return (
-    <Section
-      bgImage="gradientBluePurple_toR_600"
-      py={20}
-      id={"cta"}
-    >
+    <Section bgImage="gradientBluePurple_toR_600" py={20} id={"cta"}>
       <MainHeadingGroup
         title={ctaHeading}
         text={ctaText}
@@ -26,32 +21,29 @@ const CTA = () => {
           mb={4}
           gap={4}
         >
-          <Button
+          {/* <Link
             bg="white"
             color="blue.600"
             rounded="lg"
             _hover={{ bg: "gray.100" }}
             transition="colors"
-            size="xl"
             px={8}
             py={4}
+            gap={2}
+            href=""
           >
-            <Play />
-            Watch Live Demo
-          </Button>
-          <Button
-            variant="outline"
-            colorScheme="white"
-            color="white"
+            <Mail />
+            Request Demo
+          </Link> */}
+          <RequestDemoLink
+            color="blue.600"
             rounded="lg"
-            _hover={{ bg: "whiteAlpha.100" }}
-            transition="colors"
-            size="xl"
-            px={8}
-            py={4}
-          >
-            Start Free Trial
-          </Button>
+            px={10}
+            py={3}
+            bg="white"
+            bgHover="gray.200"
+            isIcon={true}
+          />
         </Stack>
         <Text color="whiteAlpha.700" fontSize="sm" textAlign="center">
           No credit card required • 30-day free trial • Setup in minutes

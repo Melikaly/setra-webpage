@@ -1,4 +1,4 @@
-import { defineRecipe } from "@chakra-ui/react"
+import { defineRecipe } from "@chakra-ui/react";
 
 export const linkRecipe = defineRecipe({
   className: "chakra-link",
@@ -9,7 +9,6 @@ export const linkRecipe = defineRecipe({
     gap: "1.5",
     cursor: "pointer",
     borderRadius: "l1",
-    focusRing: "outside",
   },
   variants: {
     variant: {
@@ -21,15 +20,10 @@ export const linkRecipe = defineRecipe({
       },
       plain: {
         color: "colorPalette.fg",
-        _hover: {
-          textDecoration: "underline",
-          textUnderlineOffset: "3px",
-          textDecorationColor: "currentColor/20",
-        },
       },
     },
   },
   defaultVariants: {
     variant: "plain",
   },
-})
+});

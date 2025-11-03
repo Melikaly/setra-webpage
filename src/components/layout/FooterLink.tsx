@@ -6,9 +6,9 @@ interface Prop {
   href: string;
 }
 
-const FooterLink = ({ children,href }: Prop) => {
+const FooterLink = ({ children, href }: Prop) => {
   return (
-    <Link color="gray.400" _hover={{ color: "white" }} textDecoration="none" href={href}>
+    <Link color="gray.400" _hover={{ color: "white" }} href={href}>
       {children}
     </Link>
   );

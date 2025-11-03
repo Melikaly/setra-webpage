@@ -9,9 +9,13 @@ interface Prop {
   colorTo: string;
 }
 
-const TextLogo = ({ fontSize, variant, colorTo,colorFrom }: Prop) => {
+const TextLogo = ({ fontSize, variant, colorTo, colorFrom }: Prop) => {
   return (
-    <HStack alignItems="center" justifyContent={{base:"center",lg:"flex-start"}} gap={3}>
+    <HStack
+      alignItems="center"
+      justifyContent={{ base: "center", md: "start" }}
+      gap={3}
+    >
       <Box position="relative">
         <Icon as={Eye} color="#2563eb" boxSize={8} />
         <Box position="absolute" top={-1} right={-2}>
