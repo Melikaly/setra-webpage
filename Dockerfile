@@ -1,6 +1,8 @@
 # --- Stage 1 : Build the app
 # Use the latest LTS version of Node.js
 FROM node:20-alpine AS build
+ARG VITE_BASE_PATH="/"
+ENV VITE_BASE_PATH=${VITE_BASE_PATH}
 # Set the working directory inside the container
 WORKDIR /app
 # Copy package.json and package-lock.json
