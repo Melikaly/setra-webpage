@@ -1,8 +1,17 @@
-import { defineSlotRecipe } from "@chakra-ui/react"
+import { defineSlotRecipe } from "@chakra-ui/react";
 
 export const tableSlotRecipe = defineSlotRecipe({
   className: "chakra-table",
-  slots: ["root", "header", "body", "row", "columnHeader", "cell", "footer", "caption"],
+  slots: [
+    "root",
+    "header",
+    "body",
+    "row",
+    "columnHeader",
+    "cell",
+    "footer",
+    "caption",
+  ],
   base: {
     root: {
       fontVariantNumeric: "lining-nums tabular-nums",
@@ -23,7 +32,6 @@ export const tableSlotRecipe = defineSlotRecipe({
     columnHeader: {
       fontWeight: "medium",
       textAlign: "start",
-      color: "fg",
     },
     caption: {
       fontWeight: "medium",
@@ -45,58 +53,22 @@ export const tableSlotRecipe = defineSlotRecipe({
         },
       },
     },
-    stickyHeader: {
-      true: {
-        header: {
-          "& :where(tr)": {
-            top: "var(--table-sticky-offset, 0)",
-            position: "sticky",
-            zIndex: 1,
-          },
-        },
-      },
-    },
-    striped: {
-      true: {
-        row: {
-          "&:nth-of-type(odd) td": {
-            bg: "bg.muted",
-          },
-        },
-      },
-    },
-    showColumnBorder: {
-      true: {
-        columnHeader: {
-          "&:not(:last-of-type)": {
-            borderInlineEndWidth: "1px",
-          },
-        },
-        cell: {
-          "&:not(:last-of-type)": {
-            borderInlineEndWidth: "1px",
-          },
-        },
-      },
-    },
     variant: {
-      line: {
-        columnHeader: {
-          borderBottomWidth: "1px",
-        },
-        cell: {
-          borderBottomWidth: "1px",
-        },
-        row: {
-          bg: "bg",
-        },
-      },
-      outline: {
+      custom: {
         root: {
           boxShadow: "0 0 0 1px {colors.border}",
+          fontFamily: "sans-serif",
+          borderRadius: "lg",
+          overflow: "hidden"
         },
         columnHeader: {
           borderBottomWidth: "1px",
+          fontSize: "sm",
+          fontWeight: "bold",
+        },
+        cell: {
+          fontSize: "sm",
+          fontWeight: "medium",
         },
         header: {
           bg: "bg.muted",
@@ -154,7 +126,7 @@ export const tableSlotRecipe = defineSlotRecipe({
     },
   },
   defaultVariants: {
-    variant: "line",
-    size: "md",
+    variant: "custom",
+    size: "sm",
   },
-})
+});
