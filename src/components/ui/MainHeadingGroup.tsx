@@ -8,7 +8,7 @@ interface Props {
   textColor?: string;
 }
 
-const MainHeadingGroup = ({ title, text, textColor="gray.600", headingColor }: Props) => {
+const MainHeadingGroup = ({ title, text, textColor="fg.muted", headingColor }: Props) => {
   return (
     <Box textAlign="center">
       <MainHeading title={title} color={headingColor} />

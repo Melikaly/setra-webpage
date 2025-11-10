@@ -15,7 +15,7 @@ const HeroContent = () => {
         textStyle={{ base: "4xl", md: "6xl" }}
         mb={6}
         fontWeight="bold"
-        color="gray.900"
+        color="gray.solid"
       >
         Next-Gen Video Management with{" "}
         <Text
@@ -27,7 +27,7 @@ const HeroContent = () => {
           AI Analytics
         </Text>
       </Heading>
-      <Text mb={8} textStyle={"xl"} color="gray.700">
+      <Text mb={8} textStyle={"xl"} color="gray.fg">
         Our AI-powered Video Management System (VMS) leverages advanced
         analytics and detection capabilities to enhance security and operational
         efficiency. Automate real-time monitoring and get actionable insights to
@@ -44,7 +44,7 @@ const HeroContent = () => {
           isIcon={true}
         />
       </Flex>
-      <Stack direction="row" spaceX={6} fontSize="sm" color="gray.600">
+      <Stack direction="row" spaceX={6} fontSize="sm" color="fg.muted">
         {checkedTexts.map((item) => (
           <CheckedItems text={item.text} key={item.id} />
         ))}

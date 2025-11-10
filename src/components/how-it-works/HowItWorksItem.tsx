@@ -19,10 +19,10 @@ const HowItWorksItem = ({ title, text, icon }: TitleGroup) => {
         <Icon as={icon} boxSize={8} />
       </Box>
 
-      <Heading as="h3" fontSize="xl" color="gray.900" fontWeight="bold" mb={4}>
+      <Heading as="h3" fontSize="xl" color="gray.solid" fontWeight="bold" mb={4}>
         {title}
       </Heading>
-      <Text fontSize="md" color="gray.700" lineHeight="moderate">
+      <Text fontSize="md" color="fg.muted" lineHeight="moderate">
         {text}
       </Text>
     </Box>

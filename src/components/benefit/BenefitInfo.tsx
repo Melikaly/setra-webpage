@@ -3,12 +3,12 @@ import BenefitInfoTable from "./BenefitInfoTable";
 
 const BenefitInfo = () => {
   return (
-    <Box bgImage="gradientBluePurple_toBr_50" padding={8} rounded="xl">
+    <Box bgImage="gradientBluePurple_toBr_50" bgGradient="to-br" gradientFrom="blue.subtle" gradientTo="purple.subtle" padding={8} rounded="xl">
       <Heading
         as="h4"
         fontSize={{ base: "xl", md: "2xl" }}
         fontWeight="bold"
-        color="gray.900"
+        color="gray.solid"
         mb={3}
         letterSpacing="tight"
       >
@@ -16,21 +16,21 @@ const BenefitInfo = () => {
       </Heading>
       <Text
         display={{ base: "none", md: "block" }}
-        color="gray.600"
+        color="fg.muted"
         mb={6}
         fontSize="md"
       >
         Monitor real-time security alerts and detections
       </Text>
       <Box
-        bg="white"
+        bg="bg"
         position="relative"
         mb={6}
         padding={6}
         shadow="xl"
         rounded="xl"
         overflow={{base:"scroll",md:"hidden"}}
-        borderColor="gray.100"
+        borderColor="gray.subtle"
         transition="all 0.3s ease"
         _hover={{
           shadow: "2xl",

@@ -7,7 +7,7 @@ interface Props{
 
 }
 
-const MainHeading = ({title,mb=4,color="gray.900"}:Props) => {
+const MainHeading = ({title,mb=4,color="gray.solid"}:Props) => {
   return (
     <Heading
       as={"h2"}

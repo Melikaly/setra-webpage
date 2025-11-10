@@ -8,9 +8,9 @@ const AiFeatureCard = ({ color,icon,title,text,checkedTexts}: AiFeatureProps) =>
   return (
     <Card.Root
       bgGradient="to-br"
-      gradientFrom={color + ".50"}
-      gradientTo={"white"}
-      borderColor={"blue.100"}
+      gradientFrom={`${color}.subtle`}
+      gradientTo="bg"
+      borderColor={`${color}.muted`}
       rounded="xl"
       _hover={{ shadow: "xl" }}
       transition="all"
@@ -19,8 +19,8 @@ const AiFeatureCard = ({ color,icon,title,text,checkedTexts}: AiFeatureProps) =>
     >
       <Card.Header>
         <Flex
-          color={"white"}
-          bg={color + ".600"}
+          color="bg"
+          bg={`${color}.solid`}
           rounded="sm"
           p={2}
           height={12}
@@ -37,11 +37,11 @@ const AiFeatureCard = ({ color,icon,title,text,checkedTexts}: AiFeatureProps) =>
         <Card.Title as={"h3"} fontSize="xl" fontWeight="extrabold" my="auto">
           {title}
         </Card.Title>
-        <Card.Description fontSize="md" color="gray.600" lineHeight="tall">
+        <Card.Description fontSize="md" color="gray.solid" lineHeight="tall">
           {text}
         </Card.Description>
         
-        <Stack direction="column" spaceY={0} fontSize={"sm"} color={"gray.600"}>
+        <Stack direction="column" spaceY={0} fontSize={"sm"} color="gray.solid">
           {checkedTexts.map((item)=> <CheckedItems text={item.text} key={item.id} />)}
         </Stack>
       </Card.Body>

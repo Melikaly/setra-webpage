@@ -21,9 +21,9 @@ export const heroInfoItem = [
 ];
 
 export const InfoDotscolors = [
-  { id: 1, color: "red.600" },
-  { id: 2, color: "yellow.600" },
-  { id: 3, color: "green.600" },
+  { id: 1, color: "red.solid" },
+  { id: 2, color: "yellow.solid" },
+  { id: 3, color: "green.solid" },
 ];
 
 export const checkedTexts = [

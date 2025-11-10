@@ -5,7 +5,7 @@ import BenefitInfo from "./BenefitInfo";
 
 const Benefit = () => {
   return (
-    <Section bg="white" py={20} id={"benefit"}>
+    <Section bg="bg" py={20} id={"benefit"}>
       <TwoColGrid>
         <BenefitContent />
         <BenefitInfo />

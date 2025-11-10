@@ -26,8 +26,8 @@ const CTA = () => {
             rounded="lg"
             px={10}
             py={3}
-            bg="white"
-            bgHover="gray.200"
+            bg="bg"
+            bgHover="gray.muted"
             isIcon={true}
           />
         </Stack>

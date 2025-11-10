@@ -8,7 +8,7 @@ interface Props {
 const CheckedItems = ({ text }: Props) => {
   return (
     <Box display="flex" alignItems="center" spaceX={2}>
-      <Icon boxSize={4} as={CircleCheckBig} color="#16a34a" />
+      <Icon boxSize={4} as={CircleCheckBig} color="green.solid" />
       <Text>{text}</Text>
     </Box>
   );

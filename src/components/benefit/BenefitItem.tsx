@@ -12,18 +12,18 @@ const BenefitItem = ({ title,text}: TitleGroup) => {
         height={6}
         width={6}
         rounded="full"
-        bg="green.100"
+        bg="green.subtle"
         alignItems="center"
         justifyContent="center"
         flexShrink={0}
       >
-        <Icon as={CheckCircle} boxSize={4} color="green.600" />
+        <Icon as={CheckCircle} boxSize={4} color="green.solid" />
       </Box>
       <Box>
-        <Heading as="h3" fontWeight="semibold" color="gray.900" mb={2}>
+        <Heading as="h3" fontWeight="semibold" color="gray.solid" mb={2}>
           {title}
         </Heading>
-        <Text color="gray.600">{text}</Text>
+        <Text color="gray.solid">{text}</Text>
       </Box>
     </Flex>
   );

@@ -17,7 +17,7 @@ const HeroInfo = () => {
       transition="transform 0.5s ease-in-out"
     >
       <Box
-        bg={"black"}
+        bg="black"
         position="relative"
         mb={6}
         padding={4}
@@ -56,7 +56,7 @@ const HeroInfo = () => {
       <SimpleGrid columns={3} gap={4}>
         {heroFeatures.map((feature) => (
           <FeatureItem
-          title={feature.title}
+            title={feature.title}
             text={feature.text}
             key={feature.id}
             fontName="xs"
